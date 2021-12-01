@@ -18,7 +18,8 @@ class PostgresqlAT96 < Formula
   keg_only :versioned_formula
 
   # https://www.postgresql.org/support/versioning/
-  disable! date: "2021-11-11", because: :unsupported
+  # Comment this for PD-9500
+  # disable! date: "2021-11-11", because: :unsupported
 
   depends_on "openssl@1.1"
   depends_on "readline"
